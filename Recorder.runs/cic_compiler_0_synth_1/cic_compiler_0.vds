@@ -1,0 +1,342 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Sat Sep 13 17:01:46 2025
+# Process ID         : 9368
+# Current directory  : C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/cic_compiler_0_synth_1
+# Command line       : vivado.exe -log cic_compiler_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cic_compiler_0.tcl
+# Log file           : C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/cic_compiler_0_synth_1/cic_compiler_0.vds
+# Journal file       : C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/cic_compiler_0_synth_1\vivado.jou
+# Running On         : MyPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700F
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 20
+# Host memory        : 42694 MB
+# Swap memory        : 2684 MB
+# Total Virtual      : 45379 MB
+# Available Virtual  : 25622 MB
+#-----------------------------------------------------------
+source cic_compiler_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cic_compiler_0
+Command: synth_design -top cic_compiler_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3888
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1082.035 ; gain = 466.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cic_compiler_0' [c:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.gen/sources_1/ip/cic_compiler_0/synth/cic_compiler_0.vhd:70]
+	Parameter C_COMPONENT_NAME bound to: cic_compiler_0 - type: string 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_NUM_STAGES bound to: 5 - type: integer 
+	Parameter C_DIFF_DELAY bound to: 1 - type: integer 
+	Parameter C_RATE bound to: 64 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 2 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_DSP bound to: 1 - type: integer 
+	Parameter C_HAS_ROUNDING bound to: 0 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_RATE_TYPE bound to: 0 - type: integer 
+	Parameter C_MIN_RATE bound to: 64 - type: integer 
+	Parameter C_MAX_RATE bound to: 64 - type: integer 
+	Parameter C_SAMPLE_FREQ bound to: 1 - type: integer 
+	Parameter C_CLK_FREQ bound to: 32 - type: integer 
+	Parameter C_USE_STREAMING_INTERFACE bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_C1 bound to: 32 - type: integer 
+	Parameter C_C2 bound to: 32 - type: integer 
+	Parameter C_C3 bound to: 32 - type: integer 
+	Parameter C_C4 bound to: 32 - type: integer 
+	Parameter C_C5 bound to: 32 - type: integer 
+	Parameter C_C6 bound to: 0 - type: integer 
+	Parameter C_I1 bound to: 32 - type: integer 
+	Parameter C_I2 bound to: 32 - type: integer 
+	Parameter C_I3 bound to: 32 - type: integer 
+	Parameter C_I4 bound to: 32 - type: integer 
+	Parameter C_I5 bound to: 32 - type: integer 
+	Parameter C_I6 bound to: 0 - type: integer 
+	Parameter C_S_AXIS_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_DOUT_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'cic_compiler_v4_0_20' declared at 'c:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.gen/sources_1/ip/cic_compiler_0/hdl/cic_compiler_v4_0_vh_rfs.vhd:16033' bound to instance 'U0' of component 'cic_compiler_v4_0_20' [c:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.gen/sources_1/ip/cic_compiler_0/synth/cic_compiler_0.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'cic_compiler_0' (0#1) [c:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.gen/sources_1/ip/cic_compiler_0/synth/cic_compiler_0.vhd:70]
+WARNING: [Synth 8-7129] Port SCLR in module delay_bit__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRE_ADDSUB in module emb_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRE_ADD_BYPASS in module emb_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CED in module emb_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_bit__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay_bit__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_bit__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_bit__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_bit__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RATE[6] in module decimate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RATE[5] in module decimate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RATE[4] in module decimate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RATE[3] in module decimate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RATE[2] in module decimate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RATE[1] in module decimate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RATE[0] in module decimate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RATE_WE in module decimate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port halt in module decimate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module decimate is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_data_tuser[0] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_data_tlast in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_config_tdata[0] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_config_tvalid in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[7] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[6] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[5] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[4] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[3] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[2] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tlast in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_data_tready in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1209.137 ; gain = 594.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1209.137 ; gain = 594.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1209.137 ; gain = 594.012
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1209.137 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.gen/sources_1/ip/cic_compiler_0/cic_compiler_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.gen/sources_1/ip/cic_compiler_0/cic_compiler_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/cic_compiler_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/cic_compiler_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1223.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1224.684 ; gain = 0.801
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1224.684 ; gain = 609.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1224.684 ; gain = 609.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/cic_compiler_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1224.684 ; gain = 609.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1224.684 ; gain = 609.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_en_dly' (delay_bit__parameterized0) to 'U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_mem_we'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port m_axis_data_tuser[0] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_data_tlast in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_config_tdata[0] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_config_tvalid in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[7] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[6] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[5] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[4] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[3] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata[2] in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tlast in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_data_tready in module cic_compiler_v4_0_20_viv is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1249.359 ; gain = 634.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1429.625 ; gain = 814.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1460.379 ; gain = 845.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1460.379 ; gain = 845.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1657.918 ; gain = 1042.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1657.918 ; gain = 1042.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1657.918 ; gain = 1042.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1657.918 ; gain = 1042.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1657.918 ; gain = 1042.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1657.918 ; gain = 1042.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|emb_calc_5  | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|emb_calc    | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     2|
+|2     |LUT2    |    11|
+|3     |LUT3    |    39|
+|4     |LUT4    |    10|
+|5     |LUT5    |     6|
+|6     |LUT6    |    17|
+|7     |SRL16E  |   101|
+|8     |FDRE    |   243|
+|9     |FDSE    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1657.918 ; gain = 1042.793
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1657.918 ; gain = 1027.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1657.918 ; gain = 1042.793
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1657.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1657.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 171691b8
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1657.918 ; gain = 1247.012
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1657.918 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/cic_compiler_0_synth_1/cic_compiler_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cic_compiler_0, cache-ID = 29b87da13464cd7a
+INFO: [Coretcl 2-1174] Renamed 20 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1657.918 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/cic_compiler_0_synth_1/cic_compiler_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file cic_compiler_0_utilization_synth.rpt -pb cic_compiler_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 13 17:02:15 2025...

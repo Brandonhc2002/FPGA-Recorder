@@ -1,0 +1,4 @@
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_14,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,
+axi_utils_v2_0_vh_rfs.vhd,vhdl,axi_utils_v2_0_10,../../../ipstatic/hdl/axi_utils_v2_0_vh_rfs.vhd,
+cic_compiler_v4_0_vh_rfs.vhd,vhdl,cic_compiler_v4_0_20,../../../ipstatic/hdl/cic_compiler_v4_0_vh_rfs.vhd,
+cic_compiler_0.vhd,vhdl,xil_defaultlib,../../../../Recorder.gen/sources_1/ip/cic_compiler_0/sim/cic_compiler_0.vhd,

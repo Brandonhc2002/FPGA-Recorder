@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Sat Sep 13 17:50:52 2025
+# Process ID         : 23380
+# Current directory  : C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/synth_1
+# Command line       : vivado.exe -log record_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source record_top.tcl
+# Log file           : C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/synth_1/record_top.vds
+# Journal file       : C:/Users/brand/OneDrive/Desktop/FPGA_Projects/Recorder/Recorder.runs/synth_1\vivado.jou
+# Running On         : MyPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700F
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 20
+# Host memory        : 42694 MB
+# Swap memory        : 2684 MB
+# Total Virtual      : 45379 MB
+# Available Virtual  : 23033 MB
+#-----------------------------------------------------------
+source record_top.tcl -notrace

@@ -1,0 +1,98 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Sat Sep 13 17:52:28 2025
+| Host         : MyPC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file record_top_control_sets_placed.rpt
+| Design       : record_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    61 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             120 |           40 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              17 |            5 |
+| Yes          | No                    | No                     |             139 |           27 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             423 |          162 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|       Clock Signal      |                                                                         Enable Signal                                                                         |                                                     Set/Reset Signal                                                    | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  system_clock_IBUF_BUFG | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_folded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_pipe.delay_bus_reg[6]_0 | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_folded.int_comb_stage/gen_nd_out_dly/SR[0] |                1 |              1 |         1.00 |
+|  system_clock_IBUF_BUFG |                                                                                                                                                               | my_mic/m_data[2]_i_1_n_0                                                                                                |                1 |              3 |         3.00 |
+|  system_clock_IBUF_BUFG | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/op_rate_en                                                                                             | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/op_rate_cnt[10]_i_1_n_0                                          |                3 |              3 |         1.00 |
+|  system_clock_IBUF_BUFG |                                                                                                                                                               | my_mic/counter[0]_i_1__2_n_0                                                                                            |                1 |              4 |         4.00 |
+|  system_clock_IBUF_BUFG | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/ip_rate_cnt_en_reg_n_0                                                                                 |                                                                                                                         |                1 |              5 |         5.00 |
+|  system_clock_IBUF_BUFG | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_folded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_pipe.delay_bus_reg[6]_0 |                                                                                                                         |                1 |              6 |         6.00 |
+|  system_clock_IBUF_BUFG | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_nd_out_dly/comb_nd_out                                |                                                                                                                         |                3 |              8 |         2.67 |
+|  system_clock_IBUF_BUFG | my_pwm/LED16_B_OBUF                                                                                                                                           |                                                                                                                         |                3 |              8 |         2.67 |
+|  system_clock_IBUF_BUFG | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/m_axis_data_tvalid                                                                                     |                                                                                                                         |                3 |              8 |         2.67 |
+|  system_clock_IBUF_BUFG | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/op_rate_en                                                                                             |                                                                                                                         |                2 |              8 |         4.00 |
+|  system_clock_IBUF_BUFG |                                                                                                                                                               | bram_clock_counter[0]_i_1_n_0                                                                                           |                3 |             10 |         3.33 |
+|  bram_clock_BUFG        |                                                                                                                                                               |                                                                                                                         |               10 |             11 |         1.10 |
+|  system_clock_IBUF_BUFG | my_debouncer1/counter[0]_i_2_n_0                                                                                                                              | my_debouncer1/counter[0]_i_1__0_n_0                                                                                     |                5 |             20 |         4.00 |
+|  system_clock_IBUF_BUFG | my_debouncer2/counter[0]_i_2__0_n_0                                                                                                                           | my_debouncer2/counter[0]_i_1_n_0                                                                                        |                5 |             20 |         4.00 |
+|  system_clock_IBUF_BUFG | my_debouncer3/counter[0]_i_2__1_n_0                                                                                                                           | my_debouncer3/counter[0]_i_1__1_n_0                                                                                     |                5 |             20 |         4.00 |
+|  system_clock_IBUF_BUFG | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_mem_we/WE                           |                                                                                                                         |                4 |             64 |        16.00 |
+|  system_clock_IBUF_BUFG | my_mic/cic_inst/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_en_dly/en_dly     |                                                                                                                         |               10 |             96 |         9.60 |
+|  system_clock_IBUF_BUFG |                                                                                                                                                               |                                                                                                                         |               30 |            146 |         4.87 |
+|  system_clock_IBUF_BUFG | PE3/current_state_reg[0]                                                                                                                                      | my_debouncer1/latched_reg_0                                                                                             |               56 |            150 |         2.68 |
+|  system_clock_IBUF_BUFG | PE3/current_state_reg[1]                                                                                                                                      | my_debouncer2/current_state_reg[0]                                                                                      |               87 |            209 |         2.40 |
++-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+
